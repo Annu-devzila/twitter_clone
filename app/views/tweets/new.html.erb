@@ -1,0 +1,20 @@
+<div class="new-tweet-form">
+  <h1>New Tweet</h1>
+
+  <%= form_with(model: @tweet, url: tweets_path, method: :post, local: true, multipart: true) do |form| %>
+    <%= form.label :message %>
+    <%= form.text_area :message, placeholder: "What's happening?", rows: 3 %>
+
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+
+    <%= form.label :content %>
+    <%= form.text_area :content, rows: 3 %>
+
+    <%= form.file_field :image %>
+
+    <%= form.file_field :video %>
+
+    <%= form.submit "Create Tweet" %>
+  <% end %>
+</div>

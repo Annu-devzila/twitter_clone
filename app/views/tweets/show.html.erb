@@ -1,0 +1,7 @@
+<h1><%= @tweet.title %></h1>
+<p><strong>User:</strong> <%= @tweet.user.email %></p>
+<p><strong>Content:</strong> <%= @tweet.content %></p>
+
+<% if @tweet.image.attached? %>
+  <%= image_tag @tweet.image, class: "tweet-image" %>
+<% end %>

@@ -1,0 +1,30 @@
+<h1>All Tweets</h1>
+
+<% @tweets.each do |tweet| %>
+  <a href="<%= tweet_path(tweet) %>" class="tweet-link">
+    <div class="tweet">
+      <p><strong>User:</strong> <%= tweet.user.email %></p>
+      <p><strong>Title:</strong> <%= tweet.title %></p>
+      <p><strong>Content:</strong> <%= tweet.content %></p>
+
+      <!-- Display image if attached -->
+      <% if tweet.image.attached? %>
+        <%= image_tag tweet.image.variant(resize: "100x100"), class: "tweet-image" %>
+      <% end %>
+
+      <!-- Display video if attached -->
+      <% if tweet.video.attached? %>
+        <%= video_tag tweet.video, controls: true, width: "300", height: "auto" %>
+      <% end %>
+
+      <div class="tweet-actions">
+        <%= link_to "Edit", edit_tweet_path(tweet), class: "edit-button btn btn-primary" %>
+        <%= form_with(model: tweet, method: :delete, local: true) do |form| %>
+          <%= form.submit "Delete", class: "delete-button btn btn-danger" %>
+        <% end %>
+      </div>
+    </div>
+  </a>
+<% end %>
+
+<%= link_to "New Tweet", new_tweet_path, class: "my-button" %>

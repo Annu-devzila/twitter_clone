@@ -1,0 +1,36 @@
+.new-tweet-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .new-tweet-form label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+  }
+  
+  .new-tweet-form textarea,
+  .new-tweet-form input[type="text"],
+  .new-tweet-form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .new-tweet-form input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .new-tweet-form input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  

@@ -1,0 +1,135 @@
+/* app/assets/stylesheets/tweets_index.css.scss */
+
+.tweet-container {
+  width: 80%; /* Set the width of the container to 80% of the viewport width */
+  max-width: 800px; /* Set a maximum width to prevent the container from becoming too wide */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+.tweet {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px; /* Add margin-bottom for spacing between tweets */
+  height: 200px; /* Set a fixed height for each tweet container */
+  overflow: auto; /* Add overflow property to handle content overflow */
+}
+
+
+.tweet p {
+  margin: 5px 0;
+}
+
+.tweet-actions {
+  margin-top: 10px; /* Add margin between buttons and image */
+}
+
+.tweet-image {
+  margin-top: 10px; /* Add margin between image and buttons */
+}
+
+/* Add style for edit button */
+/* Add style for edit button */
+.edit-button {
+  background-color: #007bff; /* Blue color */
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-right: 5px; /* Add margin to separate it from the delete button */
+  margin-top: 5px; /* Add top margin */
+  text-decoration: none; /* Remove underline */
+}
+
+.edit-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+/* Add space between edit and delete buttons */
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-top: 5px; /* Add top margin */
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+  margin-left: 5px; /* Add margin to separate it from the edit button */
+}
+
+
+.new-tweet-link {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Styling for image, message, and video fields */
+.tweet-image {
+  display: block;
+  margin-top: 10px;
+}
+
+.tweet-message {
+  display: block;
+  margin-top: 10px;
+}
+
+.tweet-video {
+  display: block;
+  margin-top: 10px;
+}
+.tweet-image img,
+.tweet-video video {
+  max-width: 100%; /* Ensures the image/video does not exceed its container's width */
+  height: auto; /* Allows the height to adjust automatically according to the aspect ratio */
+}
+/* Styling for media containers */
+.media-container {
+  display: flex;
+}
+
+.image-container, .video-container {
+  width: 100px; /* Adjust as needed */
+  height: 100px; /* Adjust as needed */
+  margin-right: 10px; /* Add spacing between media */
+}
+
+.image-container img, .video-container video {
+  width: 100px; /* Make media fill container */
+  height: 100px; /* Make media fill container */
+  object-fit: cover; /* Ensure media maintains aspect ratio */
+}
+
+/* Other styles for edit and delete buttons (if needed) */
+.my-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.my-button:hover {
+  background-color: #45a049;
+}
+.tweet-image {
+  max-width: 300px; /* Adjust the maximum width of the image */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+
+
