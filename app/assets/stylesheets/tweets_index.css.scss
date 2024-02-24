@@ -1,8 +1,8 @@
 .tweet-container {
-  width: 80%; /* Set the width as desired */
-  max-width: 500px; /* Set a maximum width if needed */
+  width: 80%; 
+  max-width: 500px; 
   max-height: 800px;
-  margin: 0 auto; /* Center the container horizontally */
+  margin: 0 auto; 
 }
 
 
@@ -28,22 +28,22 @@
 
 /* Style for edit and delete buttons */
 .edit-button {
-  background-color: #007bff !important; /* Override the background color */
-  color: white !important; /* Override the text color */
-  border: none !important; /* Override the border */
-  border-radius: 3px !important; /* Override the border radius */
-  padding: 5px 10px !important; /* Override the padding */
-  cursor: pointer !important; /* Override the cursor */
-  margin-top: 5px !important; /* Override the top margin */
-  text-decoration: none !important; /* Override the text decoration */
-  width: 60px !important; /* Set width to auto */
-  display: inline-block !important; /* Ensure inline block display */
+  background-color: #007bff !important; 
+  color: white !important; 
+  border: none !important; 
+  border-radius: 3px !important; 
+  padding: 5px 10px !important; 
+  cursor: pointer !important; 
+  margin-top: 5px !important; 
+  text-decoration: none !important; 
+  width: 60px !important; 
+  display: inline-block !important; 
   text-align: center !important
 }
 
 
 .delete-button {
-  background-color: #dc3545; /* Red color for delete button */
+  background-color: #dc3545; 
   color: white;
   border: none;
   border-radius: 3px;
@@ -51,9 +51,9 @@
   cursor: pointer;
   margin-top: 5px;
   text-decoration: none;
-  width: 80px; /* Fixed width for delete button */
+  width: 80px; 
   display: inline-block;
-  text-align: center; /* Center text horizontally */
+  text-align: center; 
 }
 
 .my-button {
@@ -78,5 +78,5 @@
 }
 .tweet p {
   margin: 5px 0;
-  text-decoration: none; /* Remove underline */
+  text-decoration: none; 
 }
